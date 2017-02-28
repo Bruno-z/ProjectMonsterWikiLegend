@@ -1,4 +1,23 @@
 <resources>
     <string name="app_name">MonsterWiki</string>
     <string name="action_settings">Settings</string>
+    <string name="buttonMyMonster">MES MONSTRES</string>
+    <string name="buttonCreateMonster">CREATION D'UN NOUVEAU MONSTRE</string>
+
+    <string name="persoYourMonster">Personnalise ton monstre</string>
+
+    <string name="textType">Choisis le type de ton monstre</string>
+
+    <string-array name="type">
+        <item>Eau</item>
+        <item>Feu</item>
+        <item>Foudre</item>
+        <item>Lumière</item>
+        <item>Magie</item>
+        <item>Métal</item>
+        <item>Mort</item>
+        <item>Nature</item>
+        <item>Terre</item>
+        <item>Spécial</item>
+    </string-array>
 </resources>

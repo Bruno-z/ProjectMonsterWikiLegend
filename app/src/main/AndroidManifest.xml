@@ -18,6 +18,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".CustomizeMonsterType"
+            android:label="@string/textType" />
+        <activity
+            android:name=".CustomizeMonsterName"
+            android:label="@string/persoYourMonster"></activity>
     </application>
 
 </manifest>
