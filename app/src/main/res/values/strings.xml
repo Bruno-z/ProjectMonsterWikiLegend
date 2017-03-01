@@ -1,23 +1,25 @@
 <resources>
     <string name="app_name">MonsterWiki</string>
     <string name="action_settings">Settings</string>
-    <string name="buttonMyMonster">MES MONSTRES</string>
-    <string name="buttonCreateMonster">CREATION D'UN NOUVEAU MONSTRE</string>
+    <string name="buttonMyMonster">Mes monstres</string>
+    <string name="buttonrCreateMonster">Creation de monstres</string>
 
     <string name="persoYourMonster">Personnalise ton monstre</string>
 
     <string name="textType">Choisis le type de ton monstre</string>
+    <string name="Eau">L\'Eau c\'est la Vie et puis ça mouille!</string>
+    <string name="Feu">Le Feu ça brûle</string>
+    <string name="Foudre">La Foudre ça élèctrocute</string>
+    <string name="Nature">Comment cacher un arbre? dans une fôret</string>
+    <string name="Mort">La Mort c\est Mortel comme mon humour</string>
+    <string name="Magie">Poudlard ta refuser? venge toi ici!</string>
+    <string name="Special">Soit comme forest Gump soit Special</string>
+    <string name="Terre">Solide comme un Rock</string>
+    <string name="Metal">Full Metal Alchimist</string>
+    <string name="Lumiere">Tu as fait un choix éclairer, une vrai lumière</string>
+    <string name="ButtonCara">Entrâine le dans l\'arêne !</string>
+    <string name="Toast">Ton monstre à besoin d\'un nom pour frimer!</string>
 
-    <string-array name="type">
-        <item>Eau</item>
-        <item>Feu</item>
-        <item>Foudre</item>
-        <item>Lumière</item>
-        <item>Magie</item>
-        <item>Métal</item>
-        <item>Mort</item>
-        <item>Nature</item>
-        <item>Terre</item>
-        <item>Spécial</item>
-    </string-array>
+
+
 </resources>
