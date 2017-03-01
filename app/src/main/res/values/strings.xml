@@ -2,22 +2,20 @@
     <string name="app_name">MonsterWiki</string>
     <string name="action_settings">Settings</string>
     <string name="buttonMyMonster">MES MONSTRES</string>
-    <string name="buttonCreateMonster">CREATION D'UN NOUVEAU MONSTRE</string>
+    <string name="monstre">Creation de mes monstres</string>
 
     <string name="persoYourMonster">Personnalise ton monstre</string>
 
     <string name="textType">Choisis le type de ton monstre</string>
 
-    <string-array name="type">
-        <item>Eau</item>
-        <item>Feu</item>
-        <item>Foudre</item>
-        <item>Lumière</item>
-        <item>Magie</item>
-        <item>Métal</item>
-        <item>Mort</item>
-        <item>Nature</item>
-        <item>Terre</item>
-        <item>Spécial</item>
-    </string-array>
+    <string name="textEditLifetime">Durée de vie</string>
+    <string name="textEditForce">Force</string>
+    <string name="textEditVitesse">Vitesse</string>
+    <string name="textEditStamina">Stamina</string>
+
+    <string name="compteur"></string>
+    <string name="erreur"> ATTENTION !! Tu as distribué plus de 500 points </string>
+    <string name="suivant"> Suivant </string>
+    <string name="tooMuch"> ATTENTION tu ne peux pas créer un monstre de plus de 500 pts ! </string>
+
 </resources>
