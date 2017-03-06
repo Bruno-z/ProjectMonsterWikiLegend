@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_your_monster"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="fr.wcs.monsterwiki.YourMonster"
+    android:background="@drawable/blanc">
+
+    <Button
+        android:text="@string/recommencer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recommencer"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginRight="180dp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/colorWhite" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView2"
+        android:layout_marginBottom="73dp"
+        android:id="@+id/logo"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewLifetime"
+        android:layout_alignBaseline="@+id/textViewForce"
+        android:layout_alignBottom="@+id/textViewForce"
+        android:layout_alignStart="@+id/imageView2" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewVitesse"
+        android:layout_marginEnd="21dp"
+        android:layout_alignBaseline="@+id/textViewForce"
+        android:layout_alignBottom="@+id/textViewForce"
+        android:layout_toStartOf="@+id/suivant" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/stat_speed"
+        android:id="@+id/imageView4"
+        android:layout_alignTop="@+id/imageView3"
+        android:layout_alignEnd="@+id/textViewVitesse" />
+
+    <Button
+        android:text="@string/suivant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/suivant"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textViewLifetime"
+        android:layout_marginLeft="70sp"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/colorWhite" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textViewForce"
+        android:layout_centerHorizontal="true"></LinearLayout>
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewStamina"
+        android:layout_alignBaseline="@+id/textViewLifetime"
+        android:layout_alignBottom="@+id/textViewLifetime"
+        android:layout_alignStart="@+id/imageView5" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewForce"
+        android:layout_marginBottom="60dp"
+        android:layout_above="@+id/suivant"
+        android:layout_alignStart="@+id/imageView3" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/stat_life"
+        android:layout_marginBottom="24dp"
+        android:id="@+id/imageView2"
+        android:layout_marginEnd="13dp"
+        android:layout_above="@+id/textViewLifetime"
+        android:layout_alignEnd="@+id/recommencer" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/stat_stamina"
+        android:id="@+id/imageView5"
+        android:layout_marginStart="15dp"
+        android:layout_below="@+id/logo"
+        android:layout_toEndOf="@+id/textViewLifetime" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/stat_power"
+        android:id="@+id/imageView3"
+        android:layout_marginStart="18dp"
+        android:layout_alignTop="@+id/imageView5"
+        android:layout_toEndOf="@+id/textViewStamina" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewType"
+        android:layout_above="@+id/imageView5"
+        android:layout_toStartOf="@+id/textViewForce"
+        android:layout_marginBottom="59dp" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:id="@+id/Monster"
+        android:layout_height="180dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/imageView4" />
+
+</RelativeLayout>

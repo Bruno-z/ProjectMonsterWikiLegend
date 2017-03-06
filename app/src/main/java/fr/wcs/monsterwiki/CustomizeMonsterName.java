@@ -18,6 +18,9 @@ public class CustomizeMonsterName extends AppCompatActivity {
     Button button;
     EditText condition;
 
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,18 +32,9 @@ public class CustomizeMonsterName extends AppCompatActivity {
         button = (Button) findViewById(R.id.button);
         condition =(EditText)findViewById(R.id.condition);
 
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
-
-
 
         Intent Custom1 = getIntent();
-        int element = Custom1.getIntExtra("element", 0);
-
+        final int element = Custom1.getIntExtra("element", 0);
         switch (element) {
             case 1:
                 logo.setImageResource(R.drawable.mersnake_0);
@@ -85,18 +79,30 @@ public class CustomizeMonsterName extends AppCompatActivity {
                 message.setText(getString(R.string.Terre));
                 break;
 
+
+
         }
-         if (condition.length() == 0) {
-             Toast.makeText(CustomizeMonsterName.this, getString(R.string.Toast), Toast.LENGTH_SHORT).show();
-         }
-        else {
 
 
-             Intent Custom2 = new Intent(CustomizeMonsterName.this, CustomizeMonsterLevel.class);
-             Custom2.putExtra("logo", logo);
-             Custom2.putExtra("message", message);
-             startActivity(Custom2);
-         }
+
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                if (condition.length() == 0) {
+                    Toast.makeText(CustomizeMonsterName.this, getString(R.string.Toast), Toast.LENGTH_SHORT).show();
+                }
+                else {
+                    String nom = condition.getText().toString();
+                    Intent Custom2 = new Intent(CustomizeMonsterName.this, CustomizeMonsterLevel.class);
+                    Custom2.putExtra("condition",nom);
+                    Custom2.putExtra("element",element);
+                    startActivity(Custom2);
+
+                }
+            }
+        });
+
 
     }
 }

@@ -11,36 +11,61 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="fr.wcs.monsterwiki.MainActivity"
-    tools:showIn="@layout/activity_main">
+    tools:showIn="@layout/activity_main"
+    android:background="@drawable/blackred1">
+
 
     <Button
-        android:text="@string/buttonrCreateMonster"
+
+        android:text="@string/buttonCreateMonster"
+        android:textSize="19sp"
+        android:textStyle="bold"
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/buttonCreateMonster"
-        android:layout_marginBottom="47dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
         android:background="@color/colorRed"
-        android:textColor="@color/colorWhite" />
+        android:textColor="@color/colorWhite"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="13dp" />
 
     <Button
         android:text="@string/buttonMyMonster"
+        android:textSize="19sp"
+        android:textStyle="bold"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/buttonMyMonster"
-        android:layout_marginBottom="30dp"
-        android:layout_above="@+id/buttonCreateMonster"
-        android:layout_alignParentStart="true"
+        android:layout_marginBottom="25dp"
         android:background="@color/colorRed"
-        android:textColor="@color/colorWhite" />
+        android:textColor="@color/colorWhite"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_above="@+id/buttonCreateMonster"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="@string/buttonStory"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonStory"
+        android:background="@color/colorRed"
+        android:textColor="@color/colorWhite"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_above="@+id/buttonMyMonster"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="24dp" />
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/entete"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/entete_burned"
         android:id="@+id/imageView"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="24dp" />
+        android:layout_alignBottom="@+id/buttonStory"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="15dp" />
+
 </RelativeLayout>
